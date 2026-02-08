@@ -6,7 +6,6 @@ services:
     restart: unless-stopped
     volumes:
       - z2m-data:/app/data        # named volume managed by balena, not a bind mount
-      - /run/udev:/run/udev:ro    # this one is a host path but allowed on balena for udev
     ports:
       - "8080:8080"
     devices:
