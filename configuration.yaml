@@ -2,7 +2,7 @@ homeassistant: true
 
 mqtt:
   base_topic: homeassistant-zigbee
-  server: 'mqtt://dump.local:1883'
+  server: 'mqtt://homeassistant.local:1883'
   # user: your_user
   # password: your_password
 
