@@ -5,7 +5,7 @@ permit_join: true
 
 mqtt:
   base_topic: homeassistant/zigbee
-  server: 'mqtt://192.168.1.200:1883'
+  server: 'mqtt://homeassistant.local:1883'
   # user: your_user
   # password: your_password
 

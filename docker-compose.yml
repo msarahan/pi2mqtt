@@ -4,10 +4,9 @@ services:
   zigbee2mqtt:
     build: .
     restart: unless-stopped
+    network_mode: host
     # volumes:
       # - z2m-data:/app/data        # named volume managed by balena, not a bind mount
-    ports:
-      - "8080:8080"
     devices:
       - "/dev/ttyUSB0:/dev/ttyUSB0"
     environment:
