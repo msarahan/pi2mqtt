@@ -11,7 +11,7 @@ mqtt:
 
 serial:
   port: /dev/ttyUSB0
-  adapter: ezsp             # or ember, depending on your Z2M version/firmware
+  adapter: ember             # or ember, depending on your Z2M version/firmware
   rtscts: true              # recommended for ZBT-1 
 
 frontend:
