@@ -1,5 +1,8 @@
 homeassistant: true
 
+# allow new devices to join
+permit_join: true
+
 mqtt:
   base_topic: homeassistant-zigbee
   server: 'mqtt://homeassistant.local:1883'
