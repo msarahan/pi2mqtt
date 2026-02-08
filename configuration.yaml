@@ -4,13 +4,15 @@ homeassistant: true
 permit_join: true
 
 mqtt:
-  base_topic: homeassistant-zigbee
+  base_topic: homeassistant/zigbee
   server: 'mqtt://homeassistant.local:1883'
   # user: your_user
   # password: your_password
 
 serial:
   port: /dev/ttyUSB0
+  adapter: ezsp             # or ember, depending on your Z2M version/firmware
+  rtscts: true              # recommended for ZBT-1 
 
 frontend:
   port: 8080
