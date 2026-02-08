@@ -5,7 +5,7 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - z2m-data:/app/data        # named volume managed by balena, not a bind mount
+      # - z2m-data:/app/data        # named volume managed by balena, not a bind mount
     ports:
       - "8080:8080"
     devices:
@@ -13,5 +13,5 @@ services:
     environment:
       - TZ=America/Chicago
 
-volumes:
-  z2m-data:
+# volumes:
+#   z2m-data:
