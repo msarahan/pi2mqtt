@@ -1,0 +1,14 @@
+services:
+  zigbee2mqtt:
+    image: ghcr.io/koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      - "8080:8080"       # Zigbee2MQTT frontend
+    devices:
+      - "/dev/ttyACM0:/dev/ttyACM0"
+    environment:
+      - TZ=America/Chicago
+
